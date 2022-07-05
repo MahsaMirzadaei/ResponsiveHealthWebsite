@@ -1,0 +1,53 @@
+// _____________________________ ANIMATION __________________________________//
+.home{
+    &__img{
+        animation-name: fadeInRightBig;
+        animation-duration: 1.5s;
+    }
+
+    &__data{
+        animation-name: fadeInLeftBig;
+        animation-duration: 1.5s;
+    }
+}
+
+#about{
+    opacity: 0;
+}
+#about.active{
+    animation-name: fadeInUp;
+    animation-duration: .5s;
+    opacity: 1;
+}
+
+.fade{
+    opacity: 0;
+}
+
+.services-fadeIn-active{
+    animation-name: fadeInUp ;
+    animation-duration: .4s;
+    opacity: 1;
+
+}
+.anime-left.services-fadeIn-active{
+    animation-name: fadeInLeftBig;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+.anime-right.services-fadeIn-active{
+    animation-name: fadeInRightBig;
+    animation-duration: .8s;
+    opacity: 1;
+}
+
+.app-fadeIn-active.app-fadeIn-left{
+    animation-name: fadeOutLeft;
+    animation-duration: 1s;
+    opacity: 0;
+}
+.app-fadeIn-active.app-fadeIn-right{
+    animation-name: fadeOutRight;
+    animation-duration: 1s;
+    opacity: 0;
+}

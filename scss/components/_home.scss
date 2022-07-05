@@ -1,0 +1,15 @@
+// _____________________________ HOME __________________________________//
+.home{
+    &__container{
+        row-gap: 3rem;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-bold);
+        margin-bottom: var(--mb-2);
+        margin-top: var(--mb-2);
+    }
+    &__description{
+        margin-bottom: var(--mb-2);
+    }
+}

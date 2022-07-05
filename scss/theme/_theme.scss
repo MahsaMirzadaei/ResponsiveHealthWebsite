@@ -1,0 +1,71 @@
+// _____________________________ THEME __________________________________//
+
+// _____________________________ Variable Dark Theme __________________________________//
+[data-theme = 'dark']{
+    --first-color: #59105a  ;
+    --first-color-light: #700472 ;
+    --first-color-lighten: #361636;
+    --first-color-alt: #3a003a;
+    --title-color: #f3dbf3;
+    --text-color: #ffffff;
+    --body-color: #0f060f;
+    --container-color: #000000;;
+    --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+    --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+}
+
+// _____________________________ Button Dark/Light __________________________________//
+
+.theme-switch {
+    display: inline-block;
+    height: 1rem;
+    position: fixed;
+    right: 4rem;
+    top: .9rem;
+    width: 1.8rem;
+
+    input{
+        display: none; 
+    }
+}
+
+
+.slider {
+    border: solid var(--title-color) 2px;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+
+    &::before{
+        background: var(--title-color);
+        bottom: .15rem;
+        content: "";
+        height: .5rem;
+        left: .15rem;
+        position: absolute;
+        transition: 0.4s;
+        width: .5rem;
+    }
+}
+
+input:checked + .slider {
+
+    &::before{
+        transform: translateX(.6rem);
+
+    }
+}
+
+.slider.round {
+    border-radius: 1.5rem;
+
+    &::before{
+        border-radius: 50%;
+    }
+
+}
+
